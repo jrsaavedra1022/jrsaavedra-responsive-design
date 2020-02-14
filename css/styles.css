@@ -1,0 +1,538 @@
+/*selector de etiqueta header section nav*/
+/*https://fonts.google.com/?selection.family=Fjalla+One|Source+Sans+Pro&query=fjall*/
+/*gris oscuro = #1d252c
+gris claro = #626262
+background gris = #1b2127
+celete = #026fff*/
+body {
+	margin: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*para aplicar estilos a varios selectores ,*/
+h1, h2, h3, h4, h5, h6{
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Fjalla One', sans-serif;
+	/*ancho o grosor de la fuente*/
+	font-weight: normal;
+	/*que tipo de estilo itali = cursiva*/
+	/*font-style: italic;*/
+}
+h1{
+	/*margin: top right bottom left;*/
+	/*alto de linea*/
+	line-height: 1.5;
+	/*tamaño de fuente*/
+	font-size: 40px;
+	/*ancho entre letras -.2 = menos 20 % de un pixel*/
+	letter-spacing: -.2px;
+	color: white;
+	/*para tranformar mmayuculos, minuculas etx*/
+	/*text-transform: uppercase;
+	subrayar el texto
+	text-decoration: underline;*/
+	margin: 0px;
+	/*margin: 100px 520px 70px 30px; */
+}
+h1 strong {
+	color: #026fff;
+}
+h2 {
+	color: #026fff;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+
+}
+.portfolio{
+	background: #fafafa;
+	padding: 20px;
+}
+.project{
+	/*border: tamaño tipo estilo;*/
+	/*border-top: 10px solid red;
+	border-right:  10px solid green;
+	border-left: 10px solid green;
+	border-bottom:  10px solid green;*/
+	/*border-top-color: red;*/
+	/*border-color: red;
+	border-width: 15px;
+	border-style: solid; */
+	border: 1px solid gray;
+	/*redondear los border*/
+	border-radius: 10px;
+	margin: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	background: white;
+	/*para encerrar en la caja del borde*/
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.project-course,
+.project-date,
+.project-url{
+	margin: 10px 0;
+}
+/*.project-date{
+	margin: 10px 0;
+}*/
+.project-description{
+	font-size: 20px;
+}
+.project strong {
+	font-family: 'Fjalla One', sans-serif;
+}
+.project-title{
+	font-size: 30px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.project-detail{
+	width: 50%;
+}
+.project-imageContainer{
+	width: 50%;	
+}
+.project-imageContainer img {
+	max-width: 100%; 
+}
+.hero{
+	height: 300px;
+	background-color: #1b2127;
+/*ancho y alto*/
+/*	background-size: 500px 300px;
+	background-repeat: no-repeat;*/
+	/*x y eje*/
+	/*background-position-x: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+.hero-image{
+/*	para tomar las dimensiones originales de la imagen*/
+	object-fit: cover !important;
+}
+.header{
+	/*color de fondo*/
+	background-color: #1b2127;
+	color: white; 
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items: center;
+
+	flex-wrap: wrap;
+}
+
+ol, ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.menu{
+	height: inherit;
+}
+.header ol {
+	display: flex;
+	height: inherit;
+}
+.header ol li {
+	
+	height: inherit;
+}
+.header a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0 10px;
+}
+figure{
+	margin: 0px;
+}
+
+/*h1 {
+	font-family: 'Open Sans', Times, serif;
+}*/
+/*selector desendente*/
+/*body header div nav ol li a */
+
+/*selector de clase y de id*/
+
+/*
+Podemos representar un color de 3 formas dentro de CSS:
+
+Palabra clave: red, blue, pink, etc.
+Hexadecimales: 0123456789ABCDEF
+hls() hlsa()
+#000000 = Negro
+#FFFFFF = Blanco
+Se representan por grupos de 2 -> Red, Green, Blue
+
+#FF0000 = Rojo
+#00FF00 = Verde
+#0000FF = Azul
+Para obtener un color más exacto se utiliza rgb o rgba:
+
+rgb(0, 200, 145)
+rgba(0, 50, 70, 0.5) para obtener transparencia*/
+
+
+.padre-flex{
+	display: flex;
+	/*para que bajen cuando no encuentren espacio */
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+.box{
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid orange;
+	width: 100px;
+	height: 100px;
+	
+}
+.footer{
+	color: white;
+	background-color: #1b2127;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer img{
+	/*para hacer un alineado vertical*/
+	vertical-align: middle;
+}
+.footer a {
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+.event-list{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.event{
+	/*border: 1px solid red;*/
+	margin: 1%;
+	width: 48%;/*
+	tome el tamaño que le aasigne*/
+	flex-shrink: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #f4fbff;
+}
+
+.event-image {
+	width: 480px;
+	height: 200px;
+	object-fit: cover;
+}
+.event-detail {
+	margin: 20px 40px;
+	margin-top: -40px;
+	background: white;
+	position: relative;
+	padding: 20px;
+	text-align: center;
+}
+
+.event-description {
+	text-align: left;
+}
+
+.event-url{
+	border: 1px solid #056fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #056fff;
+	border-radius: 5px;
+}
+.event-list-title{
+	margin-left: 10px;
+}
+.contact{
+	background-color:  #056fff;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center; 
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.social {
+
+}
+.social-link{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-size: 50px 50px;
+	margin: 0 10px;
+}
+.social-link.twitter{
+	background-image: url('../images/twitter.svg');
+}
+.social-link.facebook{
+	background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+	background-image: url('../images/github.svg');
+}
+.social-link.instagram{
+	background-image: url('../images/instagram.svg');
+	
+}
+.form-email input{
+	border-color: gray;
+	border-radius: 5px;
+	border-style: solid;
+	padding: 10px 20px 10px 25px;
+	background-image: url('../images/envelope.svg');
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	background-position-y: center; 
+	background-position-x: 5px; 
+}
+
+.form-email button {
+	display: block;
+	background: transparent;
+	color: white;
+	padding: 10px 0;
+	border-radius: 5px;
+	width: 100px;
+	margin-top: 10px;
+}
+.form-email h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	flex: 1;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+/*para el video*/
+.html-video{
+	width: 100%;
+	height: auto;
+	/*max-width: 100%;*/
+}
+
+.youtube-video{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+.flexible-video{
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;
+	background: transparent;
+	position: relative;
+
+}
+/*boton de hamburgusa*/
+.burger-button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: block;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+	line-height: 40px;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top: 5px;
+	color: white;
+
+}
+/*media querys*/
+@media screen and (max-width: 1024px){
+	.portfolio {
+		padding: 0px ;
+	}
+	.container {
+		padding: 0 1em;
+	}
+	.hero{
+		height: auto;
+		position: relative;
+		overflow: hidden;
+		padding: 2em;
+	}
+	.hero h1 {
+		font-size: 2em;
+		z-index: 2;
+	}
+	.hero-image{
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		width: 100%;
+
+	}
+}
+@media screen and (max-width: 767px){
+	/*boton de para el menu de hambuerguesa*/
+	.burger-button {
+		display: block;
+	}
+	/*header de la página*/
+	.header{
+		display: block;
+		height: auto;
+
+	}
+	.header ol {
+		display: block;
+	}
+	.header ol li {
+		height: 50px;
+	}
+	.header a {
+		justify-content: center;
+		height: 40px;
+		font-size: 2em;
+		text-decoration: underline;
+		margin-bottom: .5em;
+	}
+	.header .logo {
+		text-align: center;
+	}
+	/*menu de la página*/
+	.menu {
+		background-color: rgba(5, 111, 255, 0.9);
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		left: -100vw;
+		width: 100vw;
+		/*height: 100vh;*/
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition:  .3s;
+	}
+	.menu.is-active{
+		left: 0;
+	}
+	/*para eñ project*/
+	.project {
+		display: block;
+	}
+	.project-imageContainer{
+		width: auto;
+		text-align: center;
+	}
+	.project-detail {
+		width: auto;
+		font-size: 16px;
+	}
+	.project-course, .project-date, .project-url {
+		margin: .3em 0;
+	}
+	.project-title {
+		font-size: 1.5em;
+		margin-bottom: .3em;
+	}
+	.project-url{
+		font-size: 1em;
+	}
+	.project-course{
+		font-size: .7em;
+	}
+	.project-date {
+		font-size: 1em;
+	}
+	.project-description{
+		font-size: .8em;
+	}
+	/*eventos de la página*/
+	.event {
+		width: auto;
+		flex-shrink: initial;
+	}
+	.event-image {
+		width: 100%;
+	}
+}
+@media  screen and (max-width: 540px) {
+	.contact{
+		height: auto;
+		padding: 1.5em 0;
+		display: block;
+		text-align: center;
+	}
+	.form-email button {
+		margin: 1em auto;
+	}
+	.form-email h3{
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 480px){
+	/*estilos de project*/
+	.project-detail {
+		font-size: 10px;
+	}
+	.event-detail {
+		margin: -2em .5em .5em;
+		padding: 1em;
+	}
+	
+	
+	.footer {
+		display: block;
+		text-align: center;
+		border: 1px solid transparent;
+	}
+	.hero h1 {
+		font-size: 1.5em;
+		z-index: 2;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.hero h1 {
+		font-size: 1.2em;
+		z-index: 2;
+		/*background: rgb(0,0,0,.5);*/
+	}
+	.hero {
+		padding: 2em 1em;
+	}
+}
+
+
+
